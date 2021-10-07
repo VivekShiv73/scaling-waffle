@@ -1,0 +1,35 @@
+public class Main
+{
+	public static void main(String[] args) {
+		String str1 = "consectetur";
+        String str2 = "adipiscing";
+        String str3 = "elit";
+        String s = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor \n"+
+                   "incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation \n"+ 
+                   "ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in \n"+ 
+                   "voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non \n"+ 
+                   "proident, sunt in culpa qui officia deserunt mollit anim id est laborum \n\n"+
+                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor \n"+
+                   "incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation \n"+ 
+                   "ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in \n"+ 
+                   "voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non \n"+ 
+                   "proident, sunt in culpa qui officia deserunt mollit anim id est laborum \n";
+    
+StringBuilder sbStr1 = new StringBuilder();
+for (int idx = 0; idx != str1.length(); ++idx)
+    sbStr1.append("#");
+s = s.replaceAll(str1, sbStr1.toString());    
+
+StringBuilder sbStr2 = new StringBuilder();
+for (int idx = 0; idx != str2.length(); ++idx)
+    sbStr2.append("#");
+s = s.replaceAll(str2, sbStr2.toString());    
+
+StringBuilder sbStr3 = new StringBuilder();
+for (int idx = 0; idx != str3.length(); ++idx)
+    sbStr3.append("#");
+s = s.replaceAll(str3, sbStr3.toString());
+
+System.out.println(s);
+	}
+}
